@@ -1,0 +1,16 @@
+<p>trial works!</p>
+<div>
+    enter first num:
+    <input type="number" #first required [(ngModel)]="firstnum"/>
+    </div>
+    
+    <div>
+        Enter Second num:
+        <input type="number" #second required [(ngModel)]="secondnum"/>
+    </div>
+    <div>
+    
+        <input type="submit" class="btn btn-primary" value ="Add" (click)="Addnum()"/>
+      <input type="submit" class="btn btn-success" value ="Add NO.s" (click)="sum(first.value,second.value)"/>
+    </div>
+    <p>The result is:{{result}}</p>
